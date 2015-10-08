@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SignalR.MongoRabbit</id>
+    <version>1.0.0</version>
+    <authors>chrisdrobison</authors>
+    <owners>chrisdrobison</owners>
+    <licenseUrl>https://raw.githubusercontent.com/chrisdrobison/SignalR.MongoRabbit/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/chrisdrobison/SignalR.MongoRabbit</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Implementation of a SignalR backplane with RabbitMq and MongoDB as the backing stores.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>SignalR RabbitMQ MongoDB</tags>
+    <dependencies>
+      <dependency id="SignalR.RabbitMq" version="2.2.4" />
+    </dependencies>
+  </metadata>
+   <files>
+		<file src="Dist\SignalR.MongoRabbit.*" target="lib\net45" />
+	</files>
+</package>

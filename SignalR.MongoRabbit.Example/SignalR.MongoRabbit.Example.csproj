@@ -65,6 +65,10 @@
       <HintPath>..\packages\RabbitMQ.Client.3.5.4\lib\net40\RabbitMQ.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SignalR.MongoRabbit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dist\SignalR.MongoRabbit.dll</HintPath>
+    </Reference>
     <Reference Include="SignalR.RabbitMQ, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SignalR.RabbitMq.2.2.4\lib\net45\SignalR.RabbitMQ.dll</HintPath>
       <Private>True</Private>
@@ -307,12 +311,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SignalR.MongoRabbit\SignalR.MongoRabbit.csproj">
-      <Project>{aec54e7b-90cb-4c9b-b632-b270bdef63c4}</Project>
-      <Name>SignalR.MongoRabbit</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
