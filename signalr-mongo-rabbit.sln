@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.MongoRabbit", "SignalR.MongoRabbit\SignalR.MongoRabbit.csproj", "{AEC54E7B-90CB-4C9B-B632-B270BDEF63C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.MongoRabbit.Example", "SignalR.MongoRabbit.Example\SignalR.MongoRabbit.Example.csproj", "{2B6989FB-80E0-4D0F-84E0-4E6261A3CF40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC54E7B-90CB-4C9B-B632-B270BDEF63C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC54E7B-90CB-4C9B-B632-B270BDEF63C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC54E7B-90CB-4C9B-B632-B270BDEF63C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC54E7B-90CB-4C9B-B632-B270BDEF63C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B6989FB-80E0-4D0F-84E0-4E6261A3CF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6989FB-80E0-4D0F-84E0-4E6261A3CF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6989FB-80E0-4D0F-84E0-4E6261A3CF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6989FB-80E0-4D0F-84E0-4E6261A3CF40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

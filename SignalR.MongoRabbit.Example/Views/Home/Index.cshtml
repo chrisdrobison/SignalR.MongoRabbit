@@ -1,0 +1,76 @@
+﻿<div class="row" style="margin-top: 1em;">
+    <div class="col-xs-12">
+        <input type="text" id="msg" />
+        <a id="broadcast" href="#">Send message</a>
+        <a id="joingroup" href="#">Join group</a>
+        <a id="sendgroup" href="#">Send group message</a>
+
+        <p>Messages : </p>
+        <div id="console"> </div>
+        <ul id="messages"> </ul>
+    </div>
+</div>
+@section scripts
+{
+    <script src="~/signalr/hubs" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            // Proxy created on the fly
+            var chat = $.connection.chat;
+            $.connection.hub.logging = true;
+
+            // Declare a function on the chat hub so the server can invoke it
+            chat.client.addMessage = function(message, from) {
+                $('#messages').prepend('<li>' + message + " from " + from + '</li>');
+            };
+
+            chat.client.onConsoleMessage = function(message) {
+                $('#console').html('From the console application : ' + message);
+            };
+
+            $("#broadcast").click(function() {
+                // Call the chat method on the server
+                chat.server.send($('#msg').val())
+                    .done(function() {
+                        console.log('Success!');
+                    })
+                    .fail(function(e) {
+                        console.warn(e);
+                    });
+            });
+
+            $("#sendgroup").click(function() {
+                // Call the chat method on the server
+                chat.server.sendGroup($('#msg').val())
+                    .done(function() {
+                        console.log('Success!');
+                    })
+                    .fail(function(e) {
+                        console.warn(e);
+                    });
+            });
+
+            $("#joingroup").click(function() {
+                chat.server.joinGroup("SecretGroup")
+                    .done(function() {
+                        console.log('JoinGroup Success!');
+                        $("#joingroup").hide();
+                    })
+                    .fail(function(e) {
+                        console.warn(e);
+                    });
+            });
+
+            $("#broadcast").hide();
+            $("#joingroup").hide();
+
+            // Start the connection
+            $.connection.hub.start(function() {
+                $("#broadcast").show();
+                $("#joingroup").show();
+                console.log("Success");
+            });
+        });
+    </script>
+}
