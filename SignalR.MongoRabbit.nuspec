@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>SignalR.MongoRabbit</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>chrisdrobison</authors>
     <owners>chrisdrobison</owners>
     <licenseUrl>https://raw.githubusercontent.com/chrisdrobison/SignalR.MongoRabbit/master/LICENSE.md</licenseUrl>
@@ -12,7 +12,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>SignalR RabbitMQ MongoDB</tags>
     <dependencies>
-      <dependency id="SignalR.RabbitMq" version="2.2.4" />
+      <dependency id="SignalR.RabbitMq" version="2.2.6" />
     </dependencies>
   </metadata>
    <files>

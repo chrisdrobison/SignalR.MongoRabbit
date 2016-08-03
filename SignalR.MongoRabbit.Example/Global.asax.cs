@@ -23,7 +23,8 @@ namespace SignalR.MongoRabbit.Example
             {
                 UserName = "vh2user",
                 Password = "Password1",
-                HostName = "xprmw1sandbox01",
+                HostName = "xprmuttmq1",
+                AutomaticRecoveryEnabled = true,
                 VirtualHost = "vh2"
             };
 
