@@ -13,10 +13,7 @@
     <tags>SignalR RabbitMQ MongoDB</tags>
     <dependencies>
       <dependency id="SignalR.RabbitMq" version="2.2.8" />
-      <dependency id="MongoDB.Driver" version="2.2.4">
+      <dependency id="MongoDB.Driver" version="2.2.4" />
     </dependencies>
   </metadata>
-   <files>
-		<file src="Dist\SignalR.MongoRabbit.*" target="lib\net452" />
-	</files>
 </package>
